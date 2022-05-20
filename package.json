@@ -6,6 +6,8 @@
         "front-end-build":"cd udagram-frontend && npm run build",
         "back-end-build":"cd udagram-api && npm run build",
         "front-end-deploy":"cd udagram-frontend && npm run deploy",
-        "back-end-deploy":"cd udagram-api && npm run deploy"},
+        "back-end-deploy":"cd udagram-api && npm run deploy",
+        "front-end-test":"cd udagram-frontend && npm test",
+        "back-end-test":"cd udagram-api && npm test"},
     "devDependencies": {}
 }

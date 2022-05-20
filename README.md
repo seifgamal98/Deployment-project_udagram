@@ -1,4 +1,4 @@
-# Front-end Link
+### Working Front-end Link
 
 http://seifgamal-udagram.s3-website-us-east-1.amazonaws.com/
 
@@ -29,6 +29,29 @@ The project can run but is missing some information to connect to the database a
 - A S3 bucket for hosting uploaded pictures.
 
 ```
+### Infrastructer
+
+Udagram is an app consisted of fronted made with angular and backened made with express js
+
+# Front End
+
+it is deployed on S3 bucket AWS
+
+# Api
+
+udagram-api is an express node js app hosted on elastic beanstalk via circle ci
+
+# Database
+
+PostgresSQL DB hosted on AWS RDS
+
+### Pipeline
+
+Github Push triggers Circle Ci which tests/builds frontend/api and copy files to frontend/api S3 Buckets
+
+Circle Ci Api build Runs the build script, exports all environment variables from CircleCI configuration to a .env file, then runs the archive script. Then uses AWS CLI to upload archive to S3.
+
+front end deployed through S3 api deployed through elastic Beanstalk
 
 ### Installation
 
